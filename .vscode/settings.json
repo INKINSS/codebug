@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "installs",
         "config",
-        "prisma"
+        "prisma",
+        "api"
     ]
 }
