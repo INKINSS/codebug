@@ -33,7 +33,7 @@ model User {
   password      String? // solo si usas credentials provider; null si es 100% OAuth
   role          Role      @default(USER)
 
-  createdAt DateTime @updatedAt @default(now())
+  createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   accounts Account[]
