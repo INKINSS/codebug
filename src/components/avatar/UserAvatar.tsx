@@ -1,13 +1,14 @@
 import React from "react";
 import { auth } from "@/root/auth";
 import SignIn from "../buttons/SignIn";
+import SignInModal from "../modals/SignInModal";
 
 const UserAvatar = async () => {
   const session = await auth();
   const name = session?.user?.name;
 
   return (
-    <div>
+    <div className="flex">
       {name ? (
         <>
           <div className="avatar">
@@ -27,7 +28,7 @@ const UserAvatar = async () => {
           </h3>
         </>
       ) : (
-        <SignIn />
+        <SignInModal />
       )}
     </div>
   );

@@ -31,13 +31,13 @@ const Navbar = ({ children }: { children: React.ReactNode }) => {
           <Menu />
         </label>
       </header>
-      <div className="drawer-side w-80">
+      <div className="drawer-side w-80 min-w-60">
         <label
           htmlFor="my-drawer-3"
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu bg-base-200 min-h-full p-4 justify-between">
+        <ul className="menu bg-base-200 min-h-full w-full p-4 justify-between">
           {/* Sidebar content here */}
           <div className="flex flex-col w-full">
             <a className="p-4">
