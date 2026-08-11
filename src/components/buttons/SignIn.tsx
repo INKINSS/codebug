@@ -1,14 +1,18 @@
 import { signIn } from "@/root/auth";
 
-export default function SignIn() {
+type SignInProps = {
+  provider: string;
+};
+
+export default function SignIn({ provider }: SignInProps) {
   return (
     <form
       action={async () => {
         "use server";
-        await signIn("github");
+        await signIn(provider);
       }}
     >
-      <button type="submit">iniciar sesion con Github</button>
+      <button className="btn btn-outline btn-accent" type="submit">iniciar sesion con {provider}</button>
     </form>
   );
 }
