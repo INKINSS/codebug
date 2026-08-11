@@ -1,8 +1,11 @@
 {
-    "conventionalCommits.scopes": [
-        "installs",
-        "config",
-        "prisma",
-        "api"
-    ]
+  "conventionalCommits.scopes": [
+    "installs",
+    "config",
+    "prisma",
+    "api",
+    "components",
+    "pages",
+    "layout"
+  ]
 }
